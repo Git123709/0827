@@ -47,11 +47,6 @@ noButton.addEventListener("click", function() {
         noButton.innerText = noTexts[clickCount - 1];
     }
 
-    // Yes 文案变化（前 5 次变化）
-    if (clickCount <= 5) {
-        noButton.innerText = noTexts[clickCount - 1];
-    }
-
     // 图片变化（前 5 次变化）
     if (clickCount === 1) mainImage.src = "images/shocked.png"; // 震惊
     if (clickCount === 2) mainImage.src = "images/think.png";   // 思考
@@ -61,8 +56,13 @@ noButton.addEventListener("click", function() {
 
 });
 
+ // Yes 文案变化（前 5 次变化）
+    if (clickCount <= 5) {
+        noButton.innerText = noTexts[clickCount - 1];
+    }
+
 // Yes 按钮点击后，进入表白成功页面
-yesButton.addEventListener("click", function() {
+yesButton.addEventListener("clickCount > 5", function() {
     document.body.innerHTML = `
         <div class="yes-screen">
             <h1 class="yes-text">!!!喜欢你!! ( >᎑<)♡︎ᐝ</h1>
@@ -73,5 +73,6 @@ yesButton.addEventListener("click", function() {
     document.body.style.overflow = "hidden";
 
 });
+
 
 
