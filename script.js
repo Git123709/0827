@@ -18,7 +18,7 @@ const noTexts = [
 noButton.addEventListener("click", function() {
     clickCount++;
 
-    // 让 Yes 变大，每次放大 2 倍
+    // 让 No 变大，每次放大 2 倍
     let yesSize = 1 + (clickCount * 1.2);
     yesButton.style.transform = `scale(${yesSize})`;
 
@@ -57,3 +57,4 @@ yesButton.addEventListener("click", function() {
     document.body.style.overflow = "hidden";
 
 });
+
