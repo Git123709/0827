@@ -61,8 +61,8 @@ noButton.addEventListener("click", function() {
         noButton.innerText = noTexts[clickCount - 1];
     }
 
-// Yes 按钮点击后，进入表白成功页面
-yesButton.addEventListener("clickCount > 5", function() {
+// Yes 文案变化（第 6 次变化）
+    if (clickCount > 5,function()  {
     document.body.innerHTML = `
         <div class="yes-screen">
             <h1 class="yes-text">!!!喜欢你!! ( >᎑<)♡︎ᐝ</h1>
@@ -73,6 +73,7 @@ yesButton.addEventListener("clickCount > 5", function() {
     document.body.style.overflow = "hidden";
 
 });
+
 
 
 
